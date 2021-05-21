@@ -1,0 +1,4 @@
+.env/
+__pycache__/
+*.mzp
+max-2021-usd-examples.zip

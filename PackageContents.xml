@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- IMPORTANT: Note that the "patch" segment of "AppVersion" and "FriendlyVersion" are set by the build environment. -->
+<ApplicationPackage SchemaVersion="1.0"
+    ProductType="Application"
+    AutodeskProduct="3ds Max"
+
+    Name="Autodesk 3ds Max USD Examples"
+    Description="Autodesk 3ds Max USD Examples"
+    AppVersion="0.0.1"
+    FriendlyVersion="0.0.1"
+    SupportedLocales="Enu"
+    AppNameSpace="appstore.exchange.autodesk.com"
+    Author="Autodesk, Inc."
+    ProductCode="{53e3207b-c651-4674-aca7-042c2d4d1e00}"
+    UpgradeCode="{2b209cbf-6d69-4ac6-83fc-3705263ef45b}">
+
+    <RuntimeRequirements OS="Win64" Platform="3ds Max" SeriesMin="2021" SeriesMax="2023" />
+
+    <CompanyDetails Name="Autodesk, Inc." Url="www.autodesk.com" Email="me.support@autodesk.com" />
+
+    <Components Description="pre-start-up scripts parts">
+        <RuntimeRequirements OS="Win64" Platform="3ds Max" SeriesMin="2021" SeriesMax="2023" />
+        <ComponentEntry ModuleName="./scripts/max_usd_examples/init.ms" />
+        <ComponentEntry ModuleName="./scripts/max_usd_examples/usd_export_helper.ms" />
+        <ComponentEntry ModuleName="./scripts/max_usd_examples/usd_export_modifier.ms" />
+        <ComponentEntry ModuleName="./scripts/max_usd_examples/usd_export_scene_helper.ms" />
+        <ComponentEntry ModuleName="./scripts/max_usd_examples/usd_variant_model_asset_helper.ms" />
+    </Components>
+</ApplicationPackage>

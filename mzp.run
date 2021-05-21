@@ -1,0 +1,6 @@
+name "USD Example Scripts"
+version 1
+treeCopy "max-{max_version}-usd-examples" to $privatePluginPackageInstallPath
+run mzp_init.ms
+drop mzp_init.ms
+clear temp
